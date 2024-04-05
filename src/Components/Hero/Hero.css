@@ -16,12 +16,14 @@
 .hero-left h2 {
     color: #090909;
     font-size: 26px;
+    font-family: "Popins", sans-serif;
     font-weight: 600;
 }
 
 .hero-left p {
     color: #171717;
     font-size: 100px;
+    font-family: "Popins", sans-serif;
     font-weight: 700
 }
 
@@ -47,5 +49,6 @@
     background: #ff4141;
     color: #fff;
     font-size: 22px;
+    font-family: "Popins", sans-serif;
     font-weight: 500;
 }
