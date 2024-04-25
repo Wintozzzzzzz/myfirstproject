@@ -59,15 +59,33 @@
     padding: 15px 0;
 }
 
-.cartitems-total button {
-    width: 262px;
-    height: 58px;
-    border:  none;
-    outline: none;
-    background: #ff5a5a;
-    color: #fff;
+.cartitems-promocode {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 25px;
+}
+
+.btn-submit {
+    width: 257px;
+    height: 30px;
+    /* background: #ff5a5a; */
+    color: #000000;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+}
 
+.btn {
+    width: 257px;
+    height: 68px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    background: #ff4141;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    
 }
