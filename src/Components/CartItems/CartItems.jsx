@@ -4,7 +4,7 @@ import { ShopContext } from '../../Context/ShopContext'
 import remove_icon from '../Assets/cart_cross_icon.png'
 
 const CartItems = () => {
-    const {all_product, cartItems, removeFromCart} = useContext(ShopContext);
+    const {getTotalCartAmount, all_product, cartItems, removeFromCart} = useContext(ShopContext);
   return (
     <div className='cartitems'>
       <div className="cartitems-format-main">
@@ -39,27 +39,26 @@ const CartItems = () => {
         <div className="cartitems-total">
             <h1>Cart Totals</h1>
             
-        </div>
-        <div className="cartitems-total-item"></div>
-        <p>Subtotal</p>
-        <p>${0}</p>
-        <div>
+            <div className="cartitems-total-items">
+                <p>Subtotal</p>
+                <p>${getTotalCartAmount()}</p>
+            </div>
             <hr />
-            <div className="cartitems-total-item">
+            <div className="cartitems-total-items">
                 <p>Shipping Fee</p>
                 <p>Free</p>
             </div>
             <hr />
-            <div className="cartitems-total-item">
+            <div className="cartitems-total-items">
                 <h3>Total</h3>
-                <h3>${0}</h3>
+                <h3>${getTotalCartAmount()}</h3>
             </div>
-        </div>
-        <button>PROCEED TO CHECKOUT</button>
-        <div className="cartitems-promocode ">
+            <button>PROCEED TO CHECKOUT</button>
+        </div>        
+        <div className="cartitems-promocode">
             <p>If you have promo code, Enter it here</p>
             <div className="cartitems-promobox">
-                <input className='cartitems-promocode' type="text" placeholder='Enter Promo Code' />
+                <input type="text" placeholder='Promo Code' />
                 <button>Submit</button>
             </div>
             
