@@ -3,14 +3,15 @@ import './CSS/LoginSignup.css'
 import { Link } from 'react-router-dom'
 
 const LoginSignup = () => {
+  
   return (
     <div className='loginsignup'>
       <div className="loginsignup-container">
         <h1>Sign Up</h1>
         <div className="loginsignup-fields">
-          <input type='text' placeholder='Your Name'/>
-          <input type='email' placeholder='E-Mail Address'/>
-          <input type='password' placeholder='Your Password'/>
+          <input type='text' placeholder='Your Name' required/>
+          <input type='email' placeholder='E-Mail Address'required/>
+          <input type='password' placeholder='Your Password'required/>
         </div>
         <button><Link to='/' className='continue-link'>Continue</Link></button>
         <p className="loginsignup-login">Already have an account? <span>Login here</span></p>
